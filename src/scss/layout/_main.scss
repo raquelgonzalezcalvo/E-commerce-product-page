@@ -1,0 +1,42 @@
+.main {
+  &__gallery {
+    &__image {
+      border: 1px solid red;
+      background-image: url(../images/image-product-1.jpg);
+      background-size: cover;
+      background-position-y: -30px;
+      height: 260px;
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+      }
+      &--previous {
+        background-color: $White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 170px;
+        left: 15px;
+        cursor: pointer;
+      }
+      &--next {
+        background-color: $White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 170px;
+        right: 5px;
+        cursor: pointer;
+      }
+    }
+    &__thumbnails {
+      &--img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
 .header {
-  // border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +8,6 @@
   &__menu {
     width: 175px;
     height: 100%;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +48,23 @@
 }
 .navbar {
   display: none;
+  border: 1px solid green;
+  width: 400px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    &__li {
+      color: $Dark-grayish-blue;
+      display: block;
+      height: 113px;
+      padding-top: 42px;
+      &:hover {
+        border-bottom: 4px solid $Orange;
+      }
+    }
+  }
 }
+
 .modal {
   display: none;
   &__navbar {
@@ -102,6 +116,10 @@
       width: 48px;
     }
   }
+  .navbar {
+    display: block;
+  }
 }
+
 @media (min-width: 1200px) {
 }
