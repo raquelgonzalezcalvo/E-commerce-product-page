@@ -40,3 +40,14 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .main {
+    &__gallery {
+      &__thumbnails {
+        &--img {
+          display: block;
+        }
+      }
+    }
+  }
+}
