@@ -41,9 +41,15 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .main {
+    display: flex;
+    // border: 1px solid black;
+    // display: flex;
     &__gallery {
+      // display: flex;
+      // padding-left: 90px 50px;
+      // gap: 124px;
       &__thumbnails {
         &--img {
           display: block;
