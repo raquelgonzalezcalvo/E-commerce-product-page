@@ -8,7 +8,15 @@
     // border: 1px solid red;
     // display: flex;
     // flex-direction: row;
+
     &__section {
+      border: 1px solid red;
+    }
+    &__thumbnails {
+      display: flex;
+      // border: 1px solid black;
+      // // width: 320px;
+      // display: flex;
     }
   }
 }
