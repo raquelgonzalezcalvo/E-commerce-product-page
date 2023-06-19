@@ -1,0 +1,14 @@
+.modal__gallery {
+  &__section {
+  }
+}
+
+@media (min-width: 768px) {
+  .modal__gallery {
+    // border: 1px solid red;
+    // display: flex;
+    // flex-direction: row;
+    &__section {
+    }
+  }
+}

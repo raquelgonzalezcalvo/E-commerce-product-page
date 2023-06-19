@@ -1,5 +1,7 @@
 .main {
+  padding: 50px;
   &__gallery {
+    // width: 100vw;
     &__image {
       // border: 1px solid red;
       background-image: url(../images/image-product-1.jpg);
@@ -34,6 +36,7 @@
       }
     }
     &__thumbnails {
+      border: 1px solid blue;
       &--img {
         display: none;
       }
@@ -44,15 +47,20 @@
 @media (min-width: 768px) {
   .main {
     display: flex;
-    // border: 1px solid black;
-    // display: flex;
+    padding-left: 90px 50px;
+    gap: 80px;
     &__gallery {
-      // display: flex;
-      // padding-left: 90px 50px;
-      // gap: 124px;
+      &__image {
+        border-radius: 16px;
+        // height: 320px;
+      }
       &__thumbnails {
+        width: 320px;
+        // display: flex;
+        // flex-direction: column;
         &--img {
-          display: block;
+          // width: 320px;
+          display: flex;
         }
       }
     }
