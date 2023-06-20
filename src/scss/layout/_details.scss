@@ -1,7 +1,6 @@
 .main {
   width: 100vw;
   &__details {
-    // border: 1px solid red;
     padding: 24px;
     &__company {
       color: $Orange;
@@ -38,7 +37,9 @@
         text-decoration: line-through;
       }
     }
-
+    &__product {
+      gap: 20px;
+    }
     &__button {
       background-color: $Orange;
       width: 100%;
