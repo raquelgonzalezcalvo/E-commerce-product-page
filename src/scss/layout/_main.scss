@@ -1,9 +1,6 @@
 .main {
-  padding: 50px;
   &__gallery {
-    // width: 100vw;
     &__image {
-      // border: 1px solid red;
       background-image: url(../images/image-product-1.jpg);
       background-size: cover;
       background-position-y: -30px;
@@ -46,6 +43,7 @@
 
 @media (min-width: 768px) {
   .main {
+    padding: 50px;
     display: flex;
     padding-left: 90px 50px;
     gap: 80px;

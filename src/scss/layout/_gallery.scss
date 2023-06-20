@@ -2,7 +2,9 @@
   &__section {
   }
 }
-
+.modal__gallery {
+  display: none;
+}
 @media (min-width: 768px) {
   .modal__gallery {
     // border: 1px solid red;
@@ -11,6 +13,12 @@
 
     &__section {
       border: 1px solid red;
+      &__div {
+        // background-image: url("../../images/image-product-1.jpg");
+        &--div {
+          background-image: url("../../images/image-product-1.jpg");
+        }
+      }
     }
     &__thumbnails {
       display: flex;
