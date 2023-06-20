@@ -38,6 +38,7 @@
         text-decoration: line-through;
       }
     }
+
     &__button {
       background-color: $Orange;
       width: 100%;
@@ -48,6 +49,7 @@
       font-size: 0.9em;
       font-weight: 700;
       display: flex;
+
       align-items: center;
       justify-content: center;
       gap: 16px;

@@ -1,16 +1,15 @@
 .input {
-  // height: 57px;
-  // display: flex;
-  // justify-content: space-between;
+  height: 57px;
+  display: flex;
+  justify-content: space-between;
   // align-items: center;
-  // background-color: $Light-grayish-blue;
+  background-color: $Light-grayish-blue;
   // width: 100%;
+
   &__minus {
-    position: absolute;
-    left: 10px;
-    // width: 25px;
-    // height: 100%;
-    // padding: 25px 5px;
+    width: 25px;
+    height: 100%;
+    padding: 25px 5px;
     &:hover {
       cursor: pointer;
     }
@@ -26,11 +25,9 @@
     outline: none;
   }
   &__plus {
-    position: absolute;
-    right: 10px;
-    // width: 25px;
-    // height: 100%;
-    // padding: 21px 5px;
+    width: 25px;
+    height: 100%;
+    padding: 21px 5px;
     &:hover {
       cursor: pointer;
     }
