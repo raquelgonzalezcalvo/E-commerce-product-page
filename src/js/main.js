@@ -6,9 +6,21 @@ let numberInput = document.querySelector(".js-number");
 
 let userNumber = 0;
 
-function handleClick(ev) {
+function handleClickPlus(ev) {
+  userNumber++;
+  numberInput.value = userNumber;
   ev.preventDefault();
-  console.log("se presionó");
+  console.log(userNumber);
 }
 
-plusBtn.addEventListener("click", handleClick);
+function handleClickMinus() {
+  userNumber--;
+  if (userNumber <= 0) {
+    userNumber = 0;
+  }
+  numberInput.value = userNumber;
+  console.log(userNumber);
+}
+
+plusBtn.addEventListener("click", handleClickPlus);
+minusBtn.addEventListener("click", handleClickMinus);
