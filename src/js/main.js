@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-console.log('>> Ready :)');
+let addCart = document.querySelector(".js-button");

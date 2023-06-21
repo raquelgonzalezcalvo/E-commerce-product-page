@@ -1,5 +1,6 @@
 @media (min-width: 1200px) {
   .modal__gallery {
+    display: none;
     &__section {
       background-image: url("../images/image-product-1.jpg");
       background-size: cover;
@@ -10,6 +11,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
       &__div {
         &--img {
           &:hover {
@@ -43,6 +45,12 @@
           border-radius: 16px;
           width: 90px;
         }
+      }
+      &__close {
+        background-color: $White;
+        position: absolute;
+        top: -30px;
+        right: 10px;
       }
     }
     &__thumbnails {
