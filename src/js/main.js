@@ -26,13 +26,8 @@ function handleClickMinus() {
 }
 
 function handleClickAdd() {
-  console.log();
-
-  // if (numberInput.value === numberCart) {
-  //   numberInput.style.display = "flex";
-  // } else {
-  //   numberInput.style.display = "none";
-  // }
+  numberCart.innerText = userNumber;
+  numberCart.style.display = "block";
 }
 plusBtn.addEventListener("click", handleClickPlus);
 minusBtn.addEventListener("click", handleClickMinus);
