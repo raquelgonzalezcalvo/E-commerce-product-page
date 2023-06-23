@@ -27,7 +27,8 @@ function handleClickMinus() {
 
 function handleClickAdd() {
   let lastValue = parseInt(numberCart.innerText);
-  console.log(lastValue);
+  lastValue = lastValue + userNumber;
+
   numberCart.innerText = userNumber;
   numberCart.style.display = "block";
 }
