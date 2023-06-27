@@ -36,7 +36,8 @@ function handleClickAdd() {
 }
 
 function handleClickIcon() {
-  cartModal.style.display = "block";
+  // cartModal.style.display = "block";
+  cartModal.classList.toggle("show");
 }
 
 plusBtn.addEventListener("click", handleClickPlus);
