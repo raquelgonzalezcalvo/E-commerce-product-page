@@ -14,6 +14,11 @@ let priceModal = document.querySelector(".js-price");
 
 let userNumber = 0;
 
+let lastValue = parseInt(numberCart.innerText);
+
+const productDelete = document.querySelector(".js-delete");
+const container = document.querySelector(".js-container");
+
 function handleClickPlus(ev) {
   userNumber++;
   numberInput.value = userNumber;
@@ -30,21 +35,24 @@ function handleClickMinus() {
 }
 
 function handleClickAdd() {
-  let lastValue = parseInt(numberCart.innerText);
   lastValue = lastValue + userNumber;
-
   numberCart.innerText = lastValue;
   numberCart.style.display = "block";
+  priceModal.innerHTML = `125 € x${lastValue} <span>${
+    lastValue * 125
+  }.00 €</span>`;
 }
 
 function handleClickIcon() {
   cartModal.classList.toggle("show");
-  priceModal.innerHTML = `125 € x${lastValue} <span>${
-    lastValue * 125
-  }.00 €</span>`;
+}
+
+function handleClickDelete() {
+  container.innerText = "You cart is empty";
 }
 
 plusBtn.addEventListener("click", handleClickPlus);
 minusBtn.addEventListener("click", handleClickMinus);
 addCart.addEventListener("click", handleClickAdd);
 iconBtn.addEventListener("click", handleClickIcon);
+productDelete.addEventListener("click", handleClickDelete);
