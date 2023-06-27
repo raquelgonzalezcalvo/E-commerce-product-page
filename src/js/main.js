@@ -10,6 +10,8 @@ const numberCart = document.querySelector(".js-numberCart");
 const iconBtn = document.querySelector(".js-icon");
 const cartModal = document.querySelector(".js-modal");
 
+let priceModal = document.querySelector(".js-price");
+
 let userNumber = 0;
 
 function handleClickPlus(ev) {
@@ -36,8 +38,10 @@ function handleClickAdd() {
 }
 
 function handleClickIcon() {
-  // cartModal.style.display = "block";
   cartModal.classList.toggle("show");
+  priceModal.innerHTML = `125 € x${lastValue} <span>${
+    lastValue * 125
+  }.00 €</span>`;
 }
 
 plusBtn.addEventListener("click", handleClickPlus);
