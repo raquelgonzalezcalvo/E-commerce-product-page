@@ -48,7 +48,7 @@ function handleClickIcon() {
 }
 
 function handleClickDelete() {
-  container.innerText = "You cart is empty";
+  container.innerHTML = '<p class= "empty"> You cart is empty </p>';
 }
 
 plusBtn.addEventListener("click", handleClickPlus);
