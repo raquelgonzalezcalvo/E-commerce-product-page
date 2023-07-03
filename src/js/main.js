@@ -44,7 +44,7 @@ function handleClickAdd() {
 }
 
 function handleClickIcon() {
-  // cartModal.classList.toggle("show");
+  cartModal.classList.toggle("show");
   // container.innerHTML= ;
 }
 
