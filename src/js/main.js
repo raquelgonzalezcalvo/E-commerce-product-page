@@ -44,8 +44,8 @@ function handleClickAdd() {
 }
 
 function handleClickIcon() {
-  cartModal.classList.toggle("show");
-  container.innerHTML= ;
+  // cartModal.classList.toggle("show");
+  // container.innerHTML= ;
 }
 
 function handleClickDelete() {
