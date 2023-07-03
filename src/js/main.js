@@ -43,10 +43,10 @@ function handleClickAdd() {
   }.00 €</span>`;
 }
 
-function handleClickIcon() {
-  cartModal.classList.toggle("show");
-  // container.innerHTML= ;
-}
+// function handleClickIcon() {
+//   cartModal.classList.toggle("show");
+//   // container.innerHTML= ;
+// }
 
 function handleClickDelete() {
   container.innerHTML = '<p class= "empty"> You cart is empty </p>';
