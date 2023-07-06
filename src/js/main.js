@@ -76,6 +76,7 @@ function handleClickIcon() {
   cartModal.classList.toggle("show");
 
   if (lastValue === 0) {
+    drawProduct();
   }
 }
 
