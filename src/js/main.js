@@ -38,40 +38,44 @@ function handleClickAdd() {
   lastValue = lastValue + userNumber;
   numberCart.innerText = lastValue;
   numberCart.style.display = "block";
+  drawProduct();
   priceModal.innerHTML = `125 € x${lastValue} <span>${
     lastValue * 125
   }.00 €</span>`;
+}
+
+function drawProduct() {
+  container.innerHTML = `<div class="cart__modal__container js-container">
+  <div class="cart__modal__container__details">
+    <img
+      class="img"
+      src="./assets/images/image-product-1-thumbnail.jpg"
+      alt="product"
+    />
+    <div class="cart__modal__container__details--div">
+      <p class="cart__modal__container__details--p">
+        Autumn Limited Edition..
+      </p>
+      <p class="cart__modal__container__details--price js-price">
+        125 € x3 <span>375.00 €</span>
+      </p>
+    </div>
+    <img
+      class="cart__modal__container__details--delete js-delete"
+      src="./assets/images/icon-delete.svg"
+      alt="delete"
+    />
+  </div>
+  <button class="cart__modal__container__details--checkout">
+    Checkout
+  </button>
+</div>`;
 }
 
 function handleClickIcon() {
   cartModal.classList.toggle("show");
 
   if (lastValue === 0) {
-    container.innerHTML = `<div class="cart__modal__container js-container">
-      <div class="cart__modal__container__details">
-        <img
-          class="img"
-          src="./assets/images/image-product-1-thumbnail.jpg"
-          alt="product"
-        />
-        <div class="cart__modal__container__details--div">
-          <p class="cart__modal__container__details--p">
-            Autumn Limited Edition..
-          </p>
-          <p class="cart__modal__container__details--price js-price">
-            125 € x3 <span>375.00 €</span>
-          </p>
-        </div>
-        <img
-          class="cart__modal__container__details--delete js-delete"
-          src="./assets/images/icon-delete.svg"
-          alt="delete"
-        />
-      </div>
-      <button class="cart__modal__container__details--checkout">
-        Checkout
-      </button>
-    </div>`;
   }
 }
 
