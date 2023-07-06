@@ -45,7 +45,9 @@ function handleClickAdd() {
 
 function handleClickIcon() {
   cartModal.classList.toggle("show");
-  container.innerHTML = `<div class="cart__modal__container js-container">
+
+  if (lastValue === 0) {
+    container.innerHTML = `<div class="cart__modal__container js-container">
       <div class="cart__modal__container__details">
         <img
           class="img"
@@ -70,6 +72,7 @@ function handleClickIcon() {
         Checkout
       </button>
     </div>`;
+  }
 }
 
 function handleClickDelete() {
