@@ -86,6 +86,12 @@ function handleClickDelete() {
   numberCart.innerText = lastValue;
 }
 
+function delete(){
+  
+const productDelete = document.querySelector(".js-delete");
+
+}
+
 plusBtn.addEventListener("click", handleClickPlus);
 minusBtn.addEventListener("click", handleClickMinus);
 addCart.addEventListener("click", handleClickAdd);
