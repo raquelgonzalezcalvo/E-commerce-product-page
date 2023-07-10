@@ -44,6 +44,21 @@ function handleClickAdd() {
   }.00 €</span>`;
 }
 
+function handleClickIcon() {
+  cartModal.classList.toggle("show");
+
+  if (lastValue === 0) {
+    drawProduct();
+  }
+}
+
+function handleClickDelete() {
+  const productDelete = document.querySelector(".js-delete");
+  container.innerHTML = '<p class= "empty"> You cart is empty </p>';
+  lastValue = 0;
+  numberCart.innerText = lastValue;
+}
+
 function drawProduct() {
   container.innerHTML = `<div class="cart__modal__container js-container">
   <div class="cart__modal__container__details">
@@ -70,26 +85,7 @@ function drawProduct() {
     Checkout
   </button>
 </div>`;
-}
-
-function handleClickIcon() {
-  cartModal.classList.toggle("show");
-
-  if (lastValue === 0) {
-    drawProduct();
-  }
-}
-
-function handleClickDelete() {
-  container.innerHTML = '<p class= "empty"> You cart is empty </p>';
-  lastValue = 0;
-  numberCart.innerText = lastValue;
-}
-
-function delete(){
-  
-const productDelete = document.querySelector(".js-delete");
-
+  productDelete();
 }
 
 plusBtn.addEventListener("click", handleClickPlus);
