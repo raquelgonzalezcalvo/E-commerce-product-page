@@ -20,6 +20,8 @@ const productDelete = document.querySelector(".js-delete");
 const container = document.querySelector(".js-container");
 
 const imageContainer = document.querySelector(".js-image");
+const nextGallery = document.querySelector(".js-next");
+const previousGallery = document.querySelector(".js-previous");
 const imageUrl = [
   "../images/image-product-1.jpg",
   "../images/image-product-2.jpg",
