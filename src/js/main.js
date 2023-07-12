@@ -53,7 +53,6 @@ function handleClickIcon() {
 }
 
 function handleClickDelete() {
-  const productDelete = document.querySelector(".js-delete");
   container.innerHTML = '<p class= "empty"> You cart is empty </p>';
   lastValue = 0;
   numberCart.innerText = lastValue;
