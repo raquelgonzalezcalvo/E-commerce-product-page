@@ -19,10 +19,11 @@ let lastValue = parseInt(numberCart.innerText);
 const productDelete = document.querySelector(".js-delete");
 const container = document.querySelector(".js-container");
 
-const imageUrl = ["./assets/images/image-product-1.jpg"
-"./assets/images/image-product-2.jpg"
-"./assets/images/image-product-3.jpg"
-"./assets/images/image-product-4.jpg"];
+const imageUrl = ["../images/image-product-1.jpg"
+"../images/image-product-2.jpg"
+"../images/image-product-3.jpg"
+"../images/image-product-4.jpg"];
+
 
 function handleClickPlus(ev) {
   userNumber++;

@@ -1,3 +1,9 @@
+@media (min-width: 320px) {
+  .modal__gallery {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal__gallery {
     display: none;
