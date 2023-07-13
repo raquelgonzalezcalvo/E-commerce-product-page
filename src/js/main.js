@@ -22,7 +22,7 @@ const container = document.querySelector(".js-container");
 const imageContainer = document.querySelector(".js-image");
 const nextGallery = document.querySelector(".js-next");
 const previousGallery = document.querySelector(".js-previous");
-
+let imgIndex = 1;
 const imageUrl = [
   "../images/image-product-1.jpg",
   "../images/image-product-2.jpg",
@@ -103,7 +103,7 @@ function handleClickNext() {
 }
 
 function changeImage(imgContainer) {
-  imgContainer.style.backgroundImage = `url( "../images/image-product-1.jpg")`;
+  imgContainer.style.backgroundImage = `url( "../images/image-product-${imgIndex}.jpg")`;
 }
 
 nextGallery.addEventListener("click", handleClickNext);
