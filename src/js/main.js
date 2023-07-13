@@ -103,6 +103,7 @@ function handleClickNext() {
 }
 
 function changeImage(imgContainer) {
+  imgIndex++;
   imgContainer.style.backgroundImage = `url( "../images/image-product-${imgIndex}.jpg")`;
 }
 
