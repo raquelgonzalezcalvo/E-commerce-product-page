@@ -22,6 +22,7 @@ const container = document.querySelector(".js-container");
 const imageContainer = document.querySelector(".js-image");
 const nextGallery = document.querySelector(".js-next");
 const previousGallery = document.querySelector(".js-previous");
+
 const imageUrl = [
   "../images/image-product-1.jpg",
   "../images/image-product-2.jpg",
@@ -97,6 +98,15 @@ function drawProduct() {
   productDelete();
 }
 
+function handleClickNext() {
+  changeImage();
+}
+
+function changeImage(imgContainer) {
+  imgContainer.style.backgroundImage = `url( "../images/image-product-1.jpg")`;
+}
+
+nextGallery.addEventListener("click", handleClickNext);
 plusBtn.addEventListener("click", handleClickPlus);
 minusBtn.addEventListener("click", handleClickMinus);
 addCart.addEventListener("click", handleClickAdd);
