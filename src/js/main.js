@@ -23,12 +23,12 @@ const imageContainer = document.querySelector(".js-image");
 const nextGallery = document.querySelector(".js-next");
 const previousGallery = document.querySelector(".js-previous");
 let imgIndex = 1;
-const imageUrl = [
-  "../images/image-product-1.jpg",
-  "../images/image-product-2.jpg",
-  "../images/image-product-3.jpg",
-  "../images/image-product-4.jpg",
-];
+// const imageUrl = [
+//   "../images/image-product-1.jpg",
+//   "../images/image-product-2.jpg",
+//   "../images/image-product-3.jpg",
+//   "../images/image-product-4.jpg",
+// ];
 
 function handleClickPlus(ev) {
   userNumber++;
@@ -99,10 +99,15 @@ function drawProduct() {
 }
 
 function handleClickNext() {
-  changeImage();
+  changeImage(imgContainer);
 }
 
 function changeImage(imgContainer) {
+  // if (imgIndex == 4) {
+  //   imgIndex = 1;
+  // } else {
+  //   imgIndex++;
+  // }
   imgIndex++;
   imgContainer.style.backgroundImage = `url( "../images/image-product-${imgIndex}.jpg")`;
 }
