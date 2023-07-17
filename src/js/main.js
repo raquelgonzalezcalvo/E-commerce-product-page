@@ -103,11 +103,11 @@ function handleClickNext() {
 }
 
 function changeImage(imgContainer) {
-  // if (imgIndex == 4) {
-  //   imgIndex = 1;
-  // } else {
-  //   imgIndex++;
-  // }
+  if (imgIndex == 4) {
+    imgIndex = 1;
+  } else {
+    imgIndex++;
+  }
   imgIndex++;
   imgContainer.style.backgroundImage = `url( "../images/image-product-${imgIndex}.jpg")`;
 }
