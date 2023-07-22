@@ -16,7 +16,7 @@ let userNumber = 0;
 
 let lastValue = parseInt(numberCart.innerText);
 
-const productDelete = document.querySelector(".js-delete");
+// const productDelete = document.querySelector(".js-delete");
 const container = document.querySelector(".js-container");
 
 const imageContainer = document.querySelector(".js-image");
@@ -62,11 +62,17 @@ function handleClickIcon() {
     drawProduct();
   }
 }
-
-function handleClickDelete() {
+function deleteProduct() {
+  const productDelete = document.querySelector(".js-delete");
   container.innerHTML = '<p class= "empty"> You cart is empty </p>';
   lastValue = 0;
   numberCart.innerText = lastValue;
+}
+
+function handleClickDelete() {
+  //   container.innerHTML = '<p class= "empty"> You cart is empty </p>';
+  //   lastValue = 0;
+  //   numberCart.innerText = lastValue;
 }
 
 function drawProduct() {
@@ -95,7 +101,7 @@ function drawProduct() {
     Checkout
   </button>
 </div>`;
-  productDelete();
+  deleteProduct();
 }
 
 function handleClickNext() {
